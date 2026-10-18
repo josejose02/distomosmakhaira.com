@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IotaIota: Learn Biblical Greek</title>
+<meta name="description" content="IotaIota for iPhone: learn the Greek of the New Testament with vocabulary, parsing and paradigms, in your textbook's order.">
+<link rel="icon" href="icono.png">
+<link rel="apple-touch-icon" href="icono.png">
+<style>
+  :root {
+    --papel: #F2F4F7;
+    --tarjeta: #FFFFFF;
+    --tinta: #111A2E;
+    --tinta-2: rgba(17, 26, 46, 0.68);
+    --filete: rgba(17, 26, 46, 0.1);
+    --lapis: #2448B8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --papel: #111A2E;
+      --tarjeta: #18233B;
+      --tinta: #EEF1F7;
+      --tinta-2: rgba(238, 241, 247, 0.68);
+      --filete: rgba(238, 241, 247, 0.12);
+      --lapis: #8EA6F2;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--papel);
+    color: var(--tinta);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 32px; font-size: 15px; }
+  a { color: var(--lapis); overflow-wrap: anywhere; }
+  .marca { font-weight: 700; letter-spacing: 0.5px; color: var(--lapis); margin: 0 0 8px; font-size: 15px; }
+  h1 { font-size: 34px; line-height: 1.15; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.5px; }
+  h2 { font-size: 21px; font-weight: 600; margin: 40px 0 10px; }
+  h3 { font-size: 17px; font-weight: 600; margin: 24px 0 6px; }
+  .fecha { color: var(--tinta-2); margin: 0 0 28px; }
+  .resumen, .contacto { background: var(--tarjeta); border: 1px solid var(--filete); border-radius: 18px; padding: 18px 20px; }
+  .resumen ul { margin: 8px 0 0; padding-left: 20px; }
+  .contacto p { margin: 8px 0 0; }
+  details { background: var(--tarjeta); border: 1px solid var(--filete); border-radius: 14px; padding: 12px 16px; margin: 10px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p, details ul { margin: 10px 0 2px; }
+  details ul { padding-left: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 12px 0; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--filete); }
+  th { font-weight: 600; }
+  .tabla { overflow-x: auto; }
+  .boton { display: inline-block; background: var(--lapis); color: var(--papel); text-decoration: none; font-weight: 600; padding: 12px 20px; border-radius: 12px; margin: 8px 0; }
+  blockquote { margin: 12px 0; padding: 12px 16px; background: var(--tarjeta); border-left: 3px solid var(--lapis); border-radius: 0 12px 12px 0; font-size: 15px; }
+  code { font-size: 15px; }
+  hr { border: 0; border-top: 1px solid var(--filete); margin: 64px 0; }
+  small { color: var(--tinta-2); }
+</style>
+<style>
+  .cabecera { text-align: center; padding-top: 24px; }
+  .icono { width: 128px; height: 128px; border-radius: 28px; box-shadow: 0 8px 24px rgba(17, 26, 46, 0.18); }
+  .cabecera h1 { font-size: 40px; margin: 20px 0 8px; }
+  .lema { font-size: 20px; color: var(--tinta-2); margin: 0 auto 20px; max-width: 520px; }
+  .rasgos { list-style: none; padding: 0; margin: 28px 0; }
+  .rasgos li { background: var(--tarjeta); border: 1px solid var(--filete); border-radius: 14px; padding: 12px 16px; margin: 10px 0; }
+  .pie { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; font-size: 15px; margin-top: 28px; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#en">English</a><a href="#es">Español</a></nav>
+
+<section id="en" lang="en">
+<div class="cabecera">
+  <img class="icono" src="icono.png" alt="IotaIota app icon" width="128" height="128">
+  <h1>IotaIota</h1>
+  <p class="lema">Learn the Greek of the New Testament: vocabulary, parsing and paradigms, in your textbook's order.</p>
+  <a class="boton" href="https://apps.apple.com/app/id6824218715">Download on the App Store</a>
+</div>
+<ul class="rasgos">
+  <li><strong>Vocabulary with spaced repetition.</strong> Every New Testament word used 10 times or more, reviewed right before you forget it.</li>
+  <li><strong>Parsing with real forms.</strong> About 5,000 verb forms taken from the New Testament, each in its verse.</li>
+  <li><strong>Paradigms.</strong> Conjugations and declensions to fill in until they stick.</li>
+  <li><strong>Your textbook's order.</strong> Mounce, Voelz, Black, Croy, Decker, Merkle and Plummer, or our own order by frequency.</li>
+  <li><strong>Study together.</strong> Compare your week with your class or group, anonymous by default.</li>
+</ul>
+<p class="pie"><a href="soporte/">Support</a><a href="privacidad/">Privacy</a><a href="terminos/">Terms</a><a href="contenido/">Content license</a></p>
+</section>
+
+<hr>
+
+<section id="es" lang="es">
+<div class="cabecera">
+  <h1>IotaIota</h1>
+  <p class="lema">Aprende el griego del Nuevo Testamento: vocabulario, análisis y paradigmas, en el orden de tu libro.</p>
+  <a class="boton" href="https://apps.apple.com/app/id6824218715">Descargar en el App Store</a>
+</div>
+<ul class="rasgos">
+  <li><strong>Vocabulario con repaso espaciado.</strong> Todas las palabras del Nuevo Testamento que salen 10 veces o más, repasadas justo antes de olvidarlas.</li>
+  <li><strong>Análisis con formas reales.</strong> Unas 5000 formas verbales sacadas del Nuevo Testamento, cada una en su versículo.</li>
+  <li><strong>Paradigmas.</strong> Conjugaciones y declinaciones para completar hasta que se queden.</li>
+  <li><strong>El orden de tu libro.</strong> Mounce, Voelz, Black, Croy, Decker, Merkle y Plummer, o nuestro propio orden por frecuencia.</li>
+  <li><strong>Estudiar juntos.</strong> Compara tu semana con tu clase o tu grupo, de forma anónima por defecto.</li>
+</ul>
+<p class="pie"><a href="soporte/#es">Ayuda</a><a href="privacidad/#es">Privacidad</a><a href="terminos/#es">Condiciones</a><a href="contenido/#es">Licencia del contenido</a></p>
+<p class="pie"><small>IotaIota no está afiliada a las editoriales de estos libros. IotaIota is not affiliated with their publishers.</small></p>
+</section>
+</main>
+</body>
+</html>
